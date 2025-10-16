@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #0aa83f;
+}
+
+.auth-buttons button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid #0aa83f;
+  color: #0aa83f;
+}
+
+.signup {
+  background-color: #0aa83f;
+  color: #fff;
+}
+
+.balance-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.label {
+  font-size: 1rem;
+  color: #888;
+}
+
+.balance {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0aa83f;
+}
+
+.quick-actions h3,
+.transactions h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+
+.action-btn {
+  display: block;
+  text-align: center;
+  background-color: #e7f7ec;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #0aa83f;
+  text-decoration: none;
+}
+
+.action-btn i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.transaction-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.login-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0aa83f;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login-options {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.login-options a {
+  text-decoration: none;
+  color: #0aa83f;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #0aa83f;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #088235;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.register-link a {
+  color: #0aa83f;
+  text-decoration: none;
+}
+.auth-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-buttons .login {
+  border: 1px solid #0aa83f;
+  color: #0aa83f;
+  background-color: transparent;
+}
+
+.auth-buttons .signup {
+  background-color: #0aa83f;
+  color: white;
+}

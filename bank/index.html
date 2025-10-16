@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank | Mobile Banking</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Screen (Default) -->
+    <div class="login-screen" id="loginScreen">
+        <div class="logo">SecureBank</div>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+    </div>
+
+    <!-- Signup Screen (Hidden) -->
+    <div class="signup-screen" id="signupScreen" style="display: none;">
+        <div class="logo">SecureBank</div>
+        <form id="signupForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+
+    <!-- Dashboard (Hidden) -->
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <header>
+            <div class="user-info">
+                <span>Welcome, <span id="userName">User</span></span>
+            </div>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <div class="balance-card">
+            <h3>Available Balance</h3>
+            <h1 id="userBalance">$5,000.00</h1>
+        </div>
+
+        <div class="quick-actions">
+            <button id="transferBtn">Transfer</button>
+            <button id="historyBtn">History</button>
+        </div>
+
+        <!-- Transfer Form (Hidden) -->
+        <div class="transfer-form" id="transferForm" style="display: none;">
+            <h3>Transfer Funds</h3>
+            <form id="sendMoneyForm">
+                <input type="text" placeholder="Recipient Account" required>
+                <input type="number" placeholder="Amount ($)" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Transaction History (Hidden) -->
+        <div class="transaction-history" id="transactionHistory" style="display: none;">
+            <h3>Recent Transactions</h3>
+            <ul id="transactionsList">
+                <!-- Filled by JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
